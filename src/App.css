@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .app {
+    min-height: 100vh;
+  }
+}
+
+.app-content {
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+.p-1 {
+  padding: 0.5rem;
+}
+
+.mb-1 {
+  margin-bottom: 2.5rem;
+}
+
+input[type='checkbox'].filled-in:checked + span:not(.lever):after {
+  border: 2px solid #2196f3;
+  background-color: #2196f3;
+}
+
+input[type='text']:not(.browser-default):focus:not([readonly]) + label {
+  color: #2196f3;
+}
+
+input[type='text']:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid #2196f3;
+  box-shadow: 0 1px 0 0 #2196f3;
+}
+
+.input-field #search {
+  color: #fff;
+}
+
+.input-field #search:focus {
+  color: #333;
+}
+
+.input-field #search::placeholder {
+  color: #eceff1;
+  font-size: 1.2rem;
+}
+
+.input-field #search:focus::placeholder {
+  color: #757575;
+}
+
+.modal .modal-content {
+  padding: 2.5rem;
+}
+
+/* .modal .modal-footer .btn {
+  margin: 4rem 0;
+} */
+
+@media only screen and (max-width: 600px) {
+  .modal .modal-footer,
+  h4 {
+    text-align: center;
+  }
+
+  .modal .modal-footer .btn {
+    margin: 2rem 0;
+  }
+}
+
+/* .modal {
+  width: 55%;
+  height: 25%;
+} */
+
+@media only screen and (max-width: 800px) and (min-width: 700px) {
+  .modal {
+    /* height: 40%; */
+    margin-top: 25%;
+  }
+}
